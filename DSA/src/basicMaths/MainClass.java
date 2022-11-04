@@ -24,8 +24,13 @@ public class MainClass {
 //            System.out.print(x + " ");
 //        }
 
-        ArmstrongNumber aN = new ArmstrongNumber();
-        boolean n = aN.armsNum(153);
+//        ArmstrongNumber aN = new ArmstrongNumber();
+//        boolean n = aN.armsNum(153);
+//        PrintAllDivisor pD = new PrintAllDivisor();
+//        pD.divisorsOptimized(2);
+
+        sumAllDivison sN = new sumAllDivison();
+        long n = sN.divisorsLinearOptimized(4);
         System.out.println(n);
     }
 }
