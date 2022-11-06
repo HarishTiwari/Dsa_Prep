@@ -1,53 +1,31 @@
 package basicMaths;
 
-public class sumAllDivison {
+public class CheckPrime {
 
-    public long divisors(int n) {
-        long result = 0;
-        int count = 1;
-
-        while (count <= n) {
-            long sum = 0;
-            for (int i = 1; i <= count; i++) {
-                if (count % i == 0) {
-                    sum += i;
-                }
-
+    public String isPrime(int n) {
+        int count = 0;
+        for (int i = 2; i <= n; i++) {
+            if (n % i == 0) {
+                count++;
             }
-            result += sum;
-            count++;
         }
-        return result;
+        if (count > 1) return "No";
+        return "Yes";
     }
 
-    public long divisorsOptimized(int n) {
-        long result = 0;
-        int count = 1;
+    public String isPrimeOptimised(int n) {
 
-        while (count <= n) {
-            long sum = 0;
-            int sqrt = (int) Math.sqrt(count);
-            for (int i = 1; i <= sqrt; i++) {
-                if (count % i == 0) {
-                    if (i != sqrt) {
-                        sum += i + count / i;
-                    } else {
-                        sum += i;
-                    }
-                }
+        if(n==1)
+            return "No";
+
+        int sqrt = (int)Math.sqrt(n);
+        System.out.println(n);
+        System.out.println(sqrt);
+        for (int i = 2; i <= sqrt; i++) {
+            if (n % i == 0) {
+               return "No";
             }
-            result += sum;
-            count++;
         }
-        return result+5;
-    }
-
-    public long divisorsLinearOptimized(int n) {
-        long result = 0;
-
-        for(int i = 1 ; i <= n ; i++){
-            result += n/i * i;
-        }
-        return result;
+        return "Yes";
     }
 }

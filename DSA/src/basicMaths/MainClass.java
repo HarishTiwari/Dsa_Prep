@@ -29,8 +29,11 @@ public class MainClass {
 //        PrintAllDivisor pD = new PrintAllDivisor();
 //        pD.divisorsOptimized(2);
 
-        sumAllDivison sN = new sumAllDivison();
-        long n = sN.divisorsLinearOptimized(4);
+//        sumAllDivison sN = new sumAllDivison();
+//        long n = sN.divisorsLinearOptimized(4);
+
+        CheckPrime cp = new CheckPrime();
+        String n = cp.isPrimeOptimised(15);
         System.out.println(n);
     }
 }

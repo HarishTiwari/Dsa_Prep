@@ -1,15 +1,17 @@
 package Arrays;
 
-import java.util.ArrayList;
-
 public class MainClass {
 
     public static void main(String[] args) {
-        int[] arr = { 1, 3, 6, 7 , 7};
+        int[] arr = {2, 3, 1, 1, 2, 4, 2, 0, 1, 1};
         int key = 4;
 
-        SecondLargest secLar = new SecondLargest();
-        System.out.println("Second Largest element is " + secLar.findSecondLargestEfficient(arr));
+        MinimumNumberOfJumps mJ = new MinimumNumberOfJumps();
+        int n = mJ.minOfJumps(arr);
+        System.out.println(n);
+
+//        SecondLargest secLar = new SecondLargest();
+//        System.out.println("Second Largest element is " + secLar.findSecondLargestEfficient(arr));
 
 //        ClosestNumber cNum = new ClosestNumber();
 //        System.out.println(cNum.findClosestEfficient(arr,key));
