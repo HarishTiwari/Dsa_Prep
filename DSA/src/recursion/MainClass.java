@@ -9,9 +9,14 @@ public class MainClass {
 //        PrintNTo1times pNt = new PrintNTo1times();
 //        pNt.printNtimes(10);
 
-        FirstSumOfFirstNterms fN = new FirstSumOfFirstNterms();
-        long n = fN.sumOfSeriesFormula(5);
-        System.out.println(n);
+//        FirstSumOfFirstNterms fN = new FirstSumOfFirstNterms();
+//        FactorialOfNum fN = new FactorialOfNum();
+        FindFactorialTillN fN = new FindFactorialTillN();
+        for (Long x : fN.factorialNumbers(6)) {
+            System.out.print(x+" ");
+        }
+//        long n = fN.fact(5);
+//        System.out.println(n);
 
     }
 }
