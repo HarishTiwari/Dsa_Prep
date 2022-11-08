@@ -22,13 +22,10 @@ public class MainClass {
 
         ReverseArray rA = new ReverseArray();
         int[] arr = {5, 4, 3, 2, 1};
-        int[] rev = rA.reverseArray(arr);
+        int[] rev = rA.reverseArrayRecursion(arr);
 
         for(int x : rev){
             System.out.print(x + " ");
         }
-
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
     }
 }

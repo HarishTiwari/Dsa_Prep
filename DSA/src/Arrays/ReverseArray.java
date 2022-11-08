@@ -1,4 +1,4 @@
-package recursion;
+package Arrays;
 
 public class ReverseArray {
 
