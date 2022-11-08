@@ -1,5 +1,7 @@
 package recursion;
 
+import java.util.Scanner;
+
 public class MainClass {
     public static void main(String[] args) {
 
@@ -11,12 +13,22 @@ public class MainClass {
 
 //        FirstSumOfFirstNterms fN = new FirstSumOfFirstNterms();
 //        FactorialOfNum fN = new FactorialOfNum();
-        FindFactorialTillN fN = new FindFactorialTillN();
-        for (Long x : fN.factorialNumbers(6)) {
-            System.out.print(x+" ");
-        }
+//        FindFactorialTillN fN = new FindFactorialTillN();
+//        for (Long x : fN.factorialNumbers(6)) {
+//            System.out.print(x+" ");
+//        }
 //        long n = fN.fact(5);
 //        System.out.println(n);
 
+        ReverseArray rA = new ReverseArray();
+        int[] arr = {5, 4, 3, 2, 1};
+        int[] rev = rA.reverseArray(arr);
+
+        for(int x : rev){
+            System.out.print(x + " ");
+        }
+
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
     }
 }
