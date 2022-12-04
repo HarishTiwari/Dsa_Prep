@@ -3,12 +3,15 @@ package Arrays;
 public class MainClass {
 
     public static void main(String[] args) {
-        int[] arr = {2, 3, 1, 1, 2, 4, 2, 0, 1, 1};
-        int key = 4;
+        int[] arr = {10,5,10,15,10,5};
 
-        MinimumNumberOfJumps mJ = new MinimumNumberOfJumps();
-        int n = mJ.minOfJumps(arr);
-        System.out.println(n);
+        CountFrequencyInArray cA = new CountFrequencyInArray();
+        cA.countFrequencyOptimised(arr);
+//        int key = 4;
+
+//        MinimumNumberOfJumps mJ = new MinimumNumberOfJumps();
+//        int n = mJ.minOfJumps(arr);
+//        System.out.println(n);
 
 //        SecondLargest secLar = new SecondLargest();
 //        System.out.println("Second Largest element is " + secLar.findSecondLargestEfficient(arr));
