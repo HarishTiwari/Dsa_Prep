@@ -1,5 +1,6 @@
 package Arrays; // package name
 
+// class name
 public class BinarySearch {
 
     public boolean binarySearchUsingRecursion(int[] arr, int key) {
